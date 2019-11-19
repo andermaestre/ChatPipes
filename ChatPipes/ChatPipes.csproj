@@ -1,0 +1,1364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBE79257-CC53-4F7F-86AB-7AA5C38DE026}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChatPipes</RootNamespace>
+    <AssemblyName>ChatPipes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\AnderMaestre\Programacion de servicios y procesos\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-alarm-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-button-inside-black-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-comment-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-label-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-plus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-queue-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adjust-button-with-plus-and-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-mode-on-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android-logo-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple-accessibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment-clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\automatic-brightness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\automatic-flash-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto-white-balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backspace-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed-quilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\been-here-marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birthday-cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-bubble-speech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-check-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-check-box-with-white-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-envelope-email-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-keyboard-with-white-keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank-check-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank-frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blogger-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueetooth-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-disabled-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-searching-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-ribbon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-download-button-with-downwards-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-with-tick-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness-control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brochure-with-three-sections.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble-speech-with-three-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug-report-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call-forwarding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call-made-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call-received-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-diaphragm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caps-lock-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caps-lock-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-changing-lanes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-directions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell-phone-high-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell-phone-vibration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell-phone-with-blank-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change-power-options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat-bubbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chemistry-polymer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circles-extend-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-with-check-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circumference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-buildings-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clapperboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clapperboard-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard-paste-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-with-white-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed-caption-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-backup-up-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-done-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-symbol-inside-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compass-with-white-needles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connection-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy-content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create-group-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create-new-pencil-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crop-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crop-tool-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut-content-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\developer-mode-for-smartphones-and-tablets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\device-connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\device-connected-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc-is-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\do-not-disturb-rounded-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-tick-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-to-smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downwards-arrow-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drafts-evelope-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-down-round-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-up-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth-grid-select-language-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipsis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon-with-happy-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end-call-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-to-app-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\failed-sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-forward-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite-heart-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite-heart-outline-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filled-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filled-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filled-speaker-with-white-details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film-roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter-results-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash-on-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward-right-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\framed-portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front-bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front-store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-screen-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamepad-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\get-directions-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-back-left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good-mood-emoticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good-wifi-signal-with-three-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-apps-script-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-cast-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-chrome-logo-filled-with-white-colour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-folder-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-fusion-tables-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-pdf-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-drive-spreadsheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-glass-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-hangouts-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-hangouts-turn-video-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-plus-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-plus-logo-on-black-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-plus-party-mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gps-fixed-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gps-location-disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gps-location-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gps-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduate-cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\half-filled-rating-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hangouts-videocall-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headset-with-microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-button-speech-bubble-with-question-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-round-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide-keyboard-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high-quality-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high-wifi-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history-clock-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal-line-remove-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-with-three-floors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\https-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import-export-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert-picture-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invert-colors-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard-left-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard-right-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard-right-arrow-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label-right-arrow-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landscape-with-mountains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow-key-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow-missed-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light-bulb-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-button-with-3-elements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-of-three-elements-on-black-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked-padlock-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magic-wand-auto-fix-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-cycling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-walking-directions-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark-as-favorite-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark-as-unread-envelope-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medium-brightness-cogwheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medium-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medium-wifi-signal-with-two-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory-chip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merge-calls-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microphone-of-voice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microphone-voice-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microsoft-excel-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microsoft-word-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\missed-call-phone-receiver-with-left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain-range.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain-range-on-black-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountains-inside-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse-filled-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-tab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-tab-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-near-field-communication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notifications-bell-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notifications-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notifications-silenced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pages-of-google-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painter-palette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panoramic-mountain-photography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-paused-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-receiver-with-bluetooth-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-working-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-album.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photographic-film-roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterest-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet-earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button-inside-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-next-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-rounded-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-slideshow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poll-symbol-on-black-square-with-rounded-corners.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-connection-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous-track.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-printing-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\problems-with-synchronization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progress-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public-transport-subway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public-transport-train-directions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzle-piece-plugin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radio-on-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\random-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rate-star-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\read-more-left-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record-voice-microphone-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminder-bow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replay-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply-all-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ring-volume-control-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate-to-left-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate-to-right-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-account-button-with-user-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-add-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-data-usage-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-delete-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-add-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-add-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-adjust-button-with-plus-and-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-block-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-info-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-remove-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-error-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-info-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-remove-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-rgb-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubbish-bin-delete-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-locked-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-rotation-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-rotation-lock-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-with-news-sections.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-with-rounded-corners.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd-card-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-location-gps-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-brightness-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-to-back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-to-front-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server-rack-with-three-levels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set-alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set-timer-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-cogwheel-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-cogwheel-inside-black-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shared-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shining-rectangular-object.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shining-sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-basket-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-apps-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-less-fold-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-menu-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-more-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-more-button-with-three-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle-mode-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sim-card-problem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone-dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone-with-three-buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms-bubble-speech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms-speech-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake-game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort-button-with-three-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech-bubble-with-mountains-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split-call-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square-add-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swap-horizontal-orientation-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swap-vertical-orientation-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-camera-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-to-full-screen-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-vertical-orientation-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-video-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\synchronization-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\synchronization-button-with-two-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\synchronization-problem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablet-with-blank-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tack-save-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-button-with-happy-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone-keypad-with-ten-keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermostat-temperature-wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three-columns-layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three-dots-more-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-down-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-up-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick-inside-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-lapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traffic-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\train-public-transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-airplane-mode-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-microphone-off-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-notifications-off-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-notifications-on-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-synchronization-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-video-off-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-visibility-off-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter-logo-on-black-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two-circles-one-inside-the-other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two-men.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two-rows-and-three-columns-layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline-text-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlocked-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up-arrow-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-to-cloud-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-account-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-account-box-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-inside-bubble-speech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-social-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verification-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videocall-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videocam-filled-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-list-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtual-private-network-vpn-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voicemail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voice-message-microphone-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-down-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-muted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-off-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-up-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watch-with-blank-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waving-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web-server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-with-different-sections.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi-high-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi-low-signal-with-one-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi-signal-waves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-with-different-sections.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work-briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workspace-with-two-horizontal-windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-shape-public-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\write-email-envelope-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblio\Biblio.csproj">
+      <Project>{0bde1770-aadd-4116-8c59-daebb45fe493}</Project>
+      <Name>Biblio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

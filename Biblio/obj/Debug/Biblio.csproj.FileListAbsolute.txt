@@ -1,0 +1,6 @@
+C:\Users\andermaestre\source\repos\ChatPipes\Biblio\bin\Debug\Biblio.dll
+C:\Users\andermaestre\source\repos\ChatPipes\Biblio\bin\Debug\Biblio.pdb
+C:\Users\andermaestre\source\repos\ChatPipes\Biblio\obj\Debug\Biblio.csprojAssemblyReference.cache
+C:\Users\andermaestre\source\repos\ChatPipes\Biblio\obj\Debug\Biblio.csproj.CoreCompileInputs.cache
+C:\Users\andermaestre\source\repos\ChatPipes\Biblio\obj\Debug\Biblio.dll
+C:\Users\andermaestre\source\repos\ChatPipes\Biblio\obj\Debug\Biblio.pdb
