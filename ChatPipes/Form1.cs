@@ -19,19 +19,14 @@ namespace ChatPipes
         Process Auricular = new Process();
         ProcessStartInfo psi=new ProcessStartInfo();
         StreamReader sr;
+        NamedPipeClientStream clientStream;
+        int WM_MENSAJE;
         public Form1()
         {
             InitializeComponent();
 
-            psi.FileName = "..\\..\\..\\Auricular\\bin\\Debug\\Auricular.exe";
-            psi.UseShellExecute = true;
-            Auricular.StartInfo = psi;
-            Auricular.Start();
+            WM_MENSAJE = Funciones.RegisterWindowMessage("WM_MENSAJE");
 
-            NamedPipeClientStream clientStream = new NamedPipeClientStream(".", "pipe", PipeDirection.In);
-            sr = new StreamReader(clientStream);
-
-            clientStream.Connect();
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -62,6 +57,41 @@ namespace ChatPipes
         {
 
         }
-        
+
+        private void BunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            psi.FileName = "..\\..\\..\\Auricular\\bin\\Debug\\Auricular.exe";
+            psi.UseShellExecute = true;
+            Auricular.StartInfo = psi;
+            Auricular.Start();
+            clientStream = new NamedPipeClientStream(".", "pipe", PipeDirection.In);
+            clientStream.Connect();
+            sr = new StreamReader(clientStream);
+        }
+
+        private void BunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            clientStream.Close();
+        }
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == WM_MENSAJE)
+            {
+                String pal = sr.ReadLine();
+                if (pal.ToLower().CompareTo("fin") != 0)
+                {
+                    txtConversacion.AppendText(pal);
+                }
+                else
+                {
+                    MessageBox.Show("Fin");
+                    clientStream.Close();
+                }
+            }
+            else
+            {
+                base.WndProc(ref m);
+            }
+        }
     }
 }

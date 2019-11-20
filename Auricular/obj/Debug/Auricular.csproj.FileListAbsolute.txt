@@ -8,3 +8,13 @@ C:\Users\andermaestre\source\repos\ChatPipes\Auricular\obj\Debug\Auricular.pdb
 C:\Users\andermaestre\source\repos\ChatPipes\Auricular\bin\Debug\Biblio.dll
 C:\Users\andermaestre\source\repos\ChatPipes\Auricular\bin\Debug\Biblio.pdb
 C:\Users\andermaestre\source\repos\ChatPipes\Auricular\obj\Debug\Auricular.csproj.CopyComplete
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\bin\Debug\Auricular.exe.config
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\bin\Debug\Auricular.exe
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\bin\Debug\Auricular.pdb
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\bin\Debug\Biblio.dll
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\bin\Debug\Biblio.pdb
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\obj\Debug\Auricular.csprojAssemblyReference.cache
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\obj\Debug\Auricular.csproj.CoreCompileInputs.cache
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\obj\Debug\Auricular.csproj.CopyComplete
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\obj\Debug\Auricular.exe
+C:\Users\andermaestre\Desktop\git\ChatPipes\Auricular\obj\Debug\Auricular.pdb

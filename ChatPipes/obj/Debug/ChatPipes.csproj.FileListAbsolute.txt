@@ -12,3 +12,17 @@ C:\Users\andermaestre\source\repos\ChatPipes\ChatPipes\obj\Debug\ChatPipes.exe
 C:\Users\andermaestre\source\repos\ChatPipes\ChatPipes\obj\Debug\ChatPipes.pdb
 C:\Users\andermaestre\source\repos\ChatPipes\ChatPipes\bin\Debug\Biblio.dll
 C:\Users\andermaestre\source\repos\ChatPipes\ChatPipes\bin\Debug\Biblio.pdb
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\bin\Debug\ChatPipes.exe.config
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\bin\Debug\ChatPipes.exe
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\bin\Debug\ChatPipes.pdb
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\bin\Debug\Biblio.dll
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\bin\Debug\Biblio.pdb
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.csprojAssemblyReference.cache
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.Form1.resources
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.Properties.Resources.resources
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.csproj.GenerateResource.cache
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.csproj.CoreCompileInputs.cache
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.csproj.CopyComplete
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.exe
+C:\Users\andermaestre\Desktop\git\ChatPipes\ChatPipes\obj\Debug\ChatPipes.pdb

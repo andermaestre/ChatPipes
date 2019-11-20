@@ -1355,9 +1355,9 @@
     <None Include="Resources\youtube-logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Biblio\Biblio.csproj">
-      <Project>{0bde1770-aadd-4116-8c59-daebb45fe493}</Project>
-      <Name>Biblio</Name>
+    <ProjectReference Include="..\Biblioteca\Biblioteca.csproj">
+      <Project>{1bddc42e-28a2-4b8d-b33c-62c404bcb038}</Project>
+      <Name>Biblioteca</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

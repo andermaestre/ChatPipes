@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auricular", "Auricular\Auri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblio", "Biblio\Biblio.csproj", "{0BDE1770-AADD-4116-8C59-DAEBB45FE493}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{1BDDC42E-28A2-4B8D-B33C-62C404BCB038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0BDE1770-AADD-4116-8C59-DAEBB45FE493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BDE1770-AADD-4116-8C59-DAEBB45FE493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BDE1770-AADD-4116-8C59-DAEBB45FE493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDDC42E-28A2-4B8D-B33C-62C404BCB038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDDC42E-28A2-4B8D-B33C-62C404BCB038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDDC42E-28A2-4B8D-B33C-62C404BCB038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDDC42E-28A2-4B8D-B33C-62C404BCB038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

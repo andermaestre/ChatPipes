@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Biblio
 {
-    public class Class1
+    public class Funciones
     {
         [DllImport("user32")]
         public static extern int RegisterWindowMessage(string message);
